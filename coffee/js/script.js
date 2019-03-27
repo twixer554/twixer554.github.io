@@ -19,4 +19,11 @@ $(function () {
 	  type: 'inline'
 	  // other options
 	});
+	$('.navbar__burger').click(function () {
+		$('.navbar__wrapper').slideToggle();
+	});
+	$('.navbar__burger').click(function () {
+		$('.navbar__burger-item').css({ "transform": "rotate(180deg)", 
+									"transition": "all 1s"})
+	});
 });
