@@ -16,7 +16,4 @@ $(document).ready(function(){
     // instead of a settings object
   ]
   });
-  $('.navbar__burger').click(function () {
-		$('.navbar__menu').toggleClass('menu-vis');
-	});
 });
