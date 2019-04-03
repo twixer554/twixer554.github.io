@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../fonts/helvetica/HelveticaCE-Bold.eot');
+    src: url('../fonts/helvetica/HelveticaCE-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/helvetica/HelveticaCE-Bold.woff2') format('woff2'),
+        url('../fonts/helvetica/HelveticaCE-Bold.woff') format('woff'),
+        url('../fonts/helvetica/HelveticaCE-Bold.ttf') format('truetype'),
+        url('../fonts/helvetica/HelveticaCE-Bold.svg#HelveticaCE-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Samosans';
+    src: url('../fonts/samosans/SamoSansPro-Regular.eot');
+    src: url('../fonts/samosans/SamoSansPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/samosans/SamoSansPro-Regular.woff2') format('woff2'),
+        url('../fonts/samosans/SamoSansPro-Regular.woff') format('woff'),
+        url('../fonts/samosans/SamoSansPro-Regular.ttf') format('truetype'),
+        url('../fonts/samosans/SamoSansPro-Regular.svg#SamoSansPro-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'SofiaProExtraLight';
+  src:  url('../fonts/sofiapro/SofiaProExtraLight.eot?#iefix') format('embedded-opentype'),
+  		url('../fonts/sofiapro/SofiaProExtraLight.otf')  format('opentype'),
+	    url('../fonts/sofiapro/SofiaProExtraLight.woff') format('woff'), 
+	    url('../fonts/sofiapro/SofiaProExtraLight.ttf')  format('truetype'), 
+	    url('../fonts/sofiapro/SofiaProExtraLight.svg#SofiaProExtraLight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SegoeUI-R';
+  src:  url('../fonts/segoeui/regular/SegoeUI.eot?#iefix') format('embedded-opentype'),  
+ 		url('../fonts/segoeui/regular/SegoeUI.woff') format('woff'), 
+  		url('../fonts/segoeui/regular/SegoeUI.ttf')  format('truetype'), 
+  		url('../fonts/segoeui/regular/SegoeUI.svg#SegoeUI') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SegoeUI-B';
+  src:  url('../fonts/segoeui/bold/SegoeUI-Bold.eot?#iefix') format('embedded-opentype'), 
+ 	  	url('../fonts/segoeui/bold/SegoeUI-Bold.woff') format('woff'), 
+   		url('../fonts/segoeui/bold/SegoeUI-Bold.ttf')  format('truetype'), 
+   		url('../fonts/segoeui/bold/SegoeUI-Bold.svg#SegoeUI-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SegoeUI-I';
+  src:  url('SegoeUI-Italic.eot?#iefix') format('embedded-opentype'),  
+  		url('../fonts/segoeui/italic/SegoeUI-Italic.woff') format('woff'), 
+  		url('../fonts/segoeui/italic/SegoeUI-Italic.ttf')  format('truetype'), 
+  		url('../fonts/segoeui/italic/SegoeUI-Italic.svg#SegoeUI-Italic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'SegoeUI-L';
+    src: url('../fonts/segoeui/light/SegoeUI-Light.eot');
+    src: url('../fonts/segoeui/light/SegoeUI-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/segoeui/light/SegoeUI-Light.woff2') format('woff2'),
+        url('../fonts/segoeui/light/SegoeUI-Light.woff') format('woff'),
+        url('../fonts/segoeui/light/SegoeUI-Light.ttf') format('truetype'),
+        url('../fonts/segoeui/light/SegoeUI-Light.svg#SegoeUI-Light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SegoeUI-IB';
+    src: url('../fonts/segoeui/ib/ibSegoeUI-BoldItalic.eot');
+    src: url('../fonts/segoeui/ib/ibSegoeUI-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/segoeui/ib/ibSegoeUI-BoldItalic.woff2') format('woff2'),
+        url('../fonts/segoeui/ib/ibSegoeUI-BoldItalic.woff') format('woff'),
+        url('../fonts/segoeui/ib/ibSegoeUI-BoldItalic.ttf') format('truetype'),
+        url('../fonts/segoeui/ib/ibSegoeUI-BoldItalic.svg#SegoeUI-BoldItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
