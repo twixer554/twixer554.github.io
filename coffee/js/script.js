@@ -22,8 +22,18 @@ $(function () {
 	$('.navbar__burger').click(function () {
 		$('.navbar__wrapper').slideToggle();
 	});
-	$('.navbar__burger').click(function () {
-		$('.navbar__burger-item').css({ "transform": "rotate(180deg)", 
-									"transition": "all 1s"})
-	});
+	// $('.menu__item').click(function () {
+	// 	$('.navbar__wrapper').slideToggle();
+	/*});*/
+	
+		var w = $(window).width(); 
+	    if (w <= 780) { 
+	      $('.menu__item').click(function () {
+			$('.navbar__wrapper').slideToggle();
+	    });
+  }
+	// $('.navbar__burger').click(function () {
+	// 	$('.navbar__burger-item').css({ "transform": "rotate(180deg)", 
+	// 								"transition": "all 1s"})
+	// });
 });

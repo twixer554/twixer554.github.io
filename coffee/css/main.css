@@ -197,6 +197,14 @@ a {
   justify-content: space-between;
 }
 
+.navbar__hidden:checked ~ .navbar__btn .navbar__burger-item {
+  transform: rotate(180deg);
+}
+
+.navbar__hidden {
+  display: none;
+}
+
 .navbar__burger:focus .navbar__burger-item {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
@@ -206,6 +214,7 @@ a {
 }
 
 .navbar__burger-item {
+      transition: all linear 0.5s;
   width: 30px;
   height: 1px;
   background: #fff;
