@@ -15,6 +15,14 @@
 				<a href="#header" class="navbar__logo">
 					Logo
 				</a>
+				<input type="checkbox" id="hmt" class="navbar__hidden">
+				<label for="hmt" class="navbar__btn">
+					<div class="navbar__burger">
+						<div class="navbar__burger-item first"></div>
+						<div class="navbar__burger-item second"></div>
+						<div class="navbar__burger-item third"></div>
+					</div>
+				</label>
 				<nav class="navbar__nav">
 					<ul class="navbar__menu navbar-menu">
 						<li class="navbar-menu__item">
@@ -84,24 +92,21 @@
 						  	</a>
 					  </div>
 			 		</div>
-			 	</div>
-			   
+			 	</div>			   
 			</div>
-
 		</div>
 		<a href="#funny" class="more">
 			Подробнее
 		</a>
-					<button class="slick-slider-arrow-prev slick-slider-arrow">
-						<img src="img/prev.png" alt="">
-					</button>					
-					<button class="slick-slider-arrow-next slick-slider-arrow">
-						<img src="img/next.png" alt="">
-					</button>
+		<button class="slick-slider-arrow-prev slick-slider-arrow">
+			<img src="img/prev.png" alt="">
+		</button>					
+		<button class="slick-slider-arrow-next slick-slider-arrow">
+			<img src="img/next.png" alt="">
+		</button>
 	</header>
 	<section id="funny" class="funny">
-		<div class="wrapper">
-			<div class="funny-block">
+		<div class="funny-block">
 				<div class="funny-block__line title-line"></div>
 				<div class="funny-block__title">
 					C нами весело!
@@ -153,46 +158,53 @@
 					</div>
 				</div>
 			</div>
+		<div class="wrapper">			
 			<div class="title-line"></div>
 			<h2 class="section-title">
 				Поехали в путешествие!
 			</h2>
 			<div class="funny-cards">
-				<div class="funny-card">
-					<img src="img/funny-card-1.jpg" alt="" class="funny-card__img">
-					<h3 class="funny-card__title">
-						Каньон Вейма
-					</h3>
-					<div class="funny-card__value">
-						1253$
+				<div class="funny-card-wrap">
+					<div class="funny-card">
+						<img src="img/funny-card-1.jpg" alt="" class="funny-card__img">
+						<h3 class="funny-card__title">
+							Каньон Вейма
+						</h3>
+						<div class="funny-card__value">
+							1253$
+						</div>
+						<a href="#" class="funny-card__link">
+							Подробнее
+						</a>
 					</div>
-					<a href="#"class="funny-card__link">
-						Подробнее
-					</a>
 				</div>
-				<div class="funny-card">
-					<img src="img/funny-card-2.jpg" alt="" class="funny-card__img">
-					<h3 class="funny-card__title">
-						Ране Пану
-					</h3>
-					<div class="funny-card__value">
-						751$
+				<div class="funny-card-wrap">
+					<div class="funny-card">
+						<img src="img/funny-card-2.jpg" alt="" class="funny-card__img">
+						<h3 class="funny-card__title">
+							Ране Пану
+						</h3>
+						<div class="funny-card__value">
+							751$
+						</div>
+						<a href="#" class="funny-card__link">
+							Подробнее
+						</a>
 					</div>
-					<a href="#" class="funny-card__link">
-						Подробнее
-					</a>
 				</div>
-				<div class="funny-card">
-					<img src="img/funny-card-3.jpg" alt="" class="funny-card__img">
-					<h3 class="funny-card__title">
-						Сагармахта
-					</h3>
-					<div class="funny-card__value">
-						354$
+				<div class="funny-card-wrap">
+					<div class="funny-card">
+						<img src="img/funny-card-3.jpg" alt="" class="funny-card__img">
+						<h3 class="funny-card__title">
+							Сагармахта
+						</h3>
+						<div class="funny-card__value">
+							354$
+						</div>
+						<a href="#" class="funny-card__link">
+							Подробнее
+						</a>
 					</div>
-					<a href="#"class="funny-card__link">
-						Подробнее
-					</a>
 				</div>
 			</div>
 		</div>
@@ -279,7 +291,7 @@
 						Все права защищены.
 					</div>
 				</div>
-				<nav class="navbar__nav">
+				<nav class="navbar__nav navbar__nav_footer">
 					<ul class="navbar__menu navbar-menu">
 						<li class="navbar-menu__item">
 							<a href="#" class="navbar-menu__item-link">
