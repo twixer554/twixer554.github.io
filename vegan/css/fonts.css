@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Coco Gothic';
+    src: url('..fonts/CocoGothic-Bold.eot');
+    src: url('..fonts/CocoGothic-Bold.eot?#iefix') format('embedded-opentype'),
+        url('..fonts/CocoGothic-Bold.woff2') format('woff2'),
+        url('..fonts/CocoGothic-Bold.woff') format('woff'),
+        url('..fonts/CocoGothic-Bold.ttf') format('truetype'),
+        url('..fonts/CocoGothic-Bold.svg#CocoGothic-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
