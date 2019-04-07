@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Baltica';
+    src: url('../fonts/baltica/Baltica.eot');
+    src: url('../fonts/baltica/Baltica.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/baltica/Baltica.woff2') format('woff2'),
+        url('../fonts/baltica/Baltica.woff') format('woff'),
+        url('../fonts/baltica/Baltica.ttf') format('truetype'),
+        url('../fonts/baltica/Baltica.svg#Baltica') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-black';
+    src: url('../fonts/montserrat/black/Montserrat-Black.eot');
+    src: url('../fonts/montserrat/black/Montserrat-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/montserrat/black/Montserrat-Black.woff2') format('woff2'),
+        url('../fonts/montserrat/black/Montserrat-Black.woff') format('woff'),
+        url('../fonts/montserrat/black/Montserrat-Black.ttf') format('truetype'),
+        url('../fonts/montserrat/black/Montserrat-Black.svg#Montserrat-Black') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-bold';
+    src: url('../fonts/montserrat/bold/Montserrat-Bold.eot');
+    src: url('../fonts/montserrat/bold/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/montserrat/bold/Montserrat-Bold.woff2') format('woff2'),
+        url('../fonts/montserrat/bold/Montserrat-Bold.woff') format('woff'),
+        url('../fonts/montserrat/bold/Montserrat-Bold.ttf') format('truetype'),
+        url('../fonts/montserrat/bold/Montserrat-Bold.svg#Montserrat-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('../fonts/myriadpro/MyriadPro-Regular.eot');
+    src: url('../fonts/myriadpro/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/myriadpro/MyriadPro-Regular.woff2') format('woff2'),
+        url('../fonts/myriadpro/MyriadPro-Regular.woff') format('woff'),
+        url('../fonts/myriadpro/MyriadPro-Regular.ttf') format('truetype'),
+        url('../fonts/myriadpro/MyriadPro-Regular.svg#MyriadPro-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
