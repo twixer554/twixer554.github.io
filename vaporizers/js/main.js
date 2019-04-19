@@ -10,5 +10,12 @@ $(document).ready(function() {
 		slidesToShow: 1,
 		centerMode: true,
 		variableWidth: true,
+	  	nextArrow: $('.devices-slider-arrow-next'), 
+	  	prevArrow: $('.devices-slider-arrow-prev')
+	});
+	$('.comments-slider').slick({
+		dots: true,
+	  	nextArrow: $('.comments-slider-arrow-next'), 
+	  	prevArrow: $('.comments-slider-arrow-prev')
 	});
 });
