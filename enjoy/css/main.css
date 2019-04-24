@@ -158,6 +158,7 @@ ul, li {
         padding: 5px 0;
     }
     .navbar-menu_business, .navbar-menu_programms, .navbar-menu_services {
+        background: #fff;
         padding-left: 20px;
         flex-basis: 100%;
         width: 100%;
