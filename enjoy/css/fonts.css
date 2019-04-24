@@ -1,23 +1,20 @@
 @font-face {
     font-family: 'Georgia';
-    src: url('../fonts/Georgia.eot');
-    src: url('../fonts/Georgia.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Georgia.woff2') format('woff2'),
-        url('../fonts/Georgia.woff') format('woff'),
-        url('../fonts/Georgia.ttf') format('truetype'),
-        url('../fonts/Georgia.svg#Georgia') format('svg');
+    src: url('../fonts/Neris-Light.otf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Georgia';
-    src: url('../fonts/Georgia-Bold.eot');
-    src: url('../fonts/Georgia-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Georgia-Bold.woff2') format('woff2'),
-        url('../fonts/Georgia-Bold.woff') format('woff'),
-        url('../fonts/Georgia-Bold.ttf') format('truetype'),
-        url('../fonts/Georgia-Bold.svg#Georgia-Bold') format('svg');
+    src: url('../fonts/Neris-Black.otf');
     font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Georgia';
+    src: url('../fonts/Neris-SemiBold.otf');
+    font-weight: 600;
     font-style: normal;
 }
