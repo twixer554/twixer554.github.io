@@ -1,4 +1,5 @@
 $(document).ready(function() {
+	
 	$(function () {
 		$("a[data-target^='anchor']").click(function () {
 			var _href = $(this).attr("href");
