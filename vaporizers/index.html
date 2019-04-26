@@ -17,49 +17,59 @@
 					<a href="#header">
 						<img src="img/logo.png" alt="logo" class="navbar__logo">
 					</a>
+                   <input type="checkbox" id="hmt" class="navbar__hidden">
+                   <label for="hmt" class="navbar__btn">
+                       <div class="navbar__burger">
+                           <div class="navbar__burger-item first"></div>
+                           <div class="navbar__burger-item second"></div>
+                           <div class="navbar__burger-item third"></div>
+                       </div>
+                   </label>
 					<nav class="navbar__nav">
-						<ul class="navbar__menu navbar-menu">
-							<li class="navbar-menu__item">
-								<a href="#header" class="navbar-menu__item-link" data-target="anchor">
-									Главная
-								</a> 
-							</li>
-							<li class="navbar-menu__item">
-								<a href="#offer" class="navbar-menu__item-link" data-target="anchor">
-									Товары
-								</a>
-							</li>
-							<li class="navbar-menu__item">
-								<a href="#comments" class="navbar-menu__item-link" data-target="anchor">
-									Отзывы
-								</a>
-							</li>
-							<li class="navbar-menu__item">
-								<a href="#for-you" class="navbar-menu__item-link" data-target="anchor">
-									Преимущества
-								</a>
-							</li>
-							<li class="navbar-menu__item">
-								<a href="#contacts" class="navbar-menu__item-link" data-target="anchor">
-									Контакты
-								</a>
-							</li>
-						</ul>
-					</nav>
-					<div class="navbar__basket navbar-basket">
-						<a href="#" class="navbar-basket__item">
-							<img src="img/basket.png" alt="">
-						</a>
-						<div class="navbar-basket__summ">
-							Итого:<br>
-							<span class="navbar-basaket__summ-value">
-								3000<i class="fas fa-ruble-sign"></i>
-							</span>
+						<div class="navbar-menu-wrap">
+							<ul class="navbar__menu navbar-menu">
+								<li class="navbar-menu__item">
+									<a href="#header" class="navbar-menu__item-link" data-target="anchor">
+										Главная
+									</a> 
+								</li>
+								<li class="navbar-menu__item">
+									<a href="#offer" class="navbar-menu__item-link" data-target="anchor">
+										Товары
+									</a>
+								</li>
+								<li class="navbar-menu__item">
+									<a href="#comments" class="navbar-menu__item-link" data-target="anchor">
+										Отзывы
+									</a>
+								</li>
+								<li class="navbar-menu__item">
+									<a href="#for-you" class="navbar-menu__item-link" data-target="anchor">
+										Преимущества
+									</a>
+								</li>
+								<li class="navbar-menu__item">
+									<a href="#contacts" class="navbar-menu__item-link" data-target="anchor">
+										Контакты
+									</a>
+								</li>
+							</ul>
 						</div>
-						<a href="#" class="navbar-basket__btn btn btn_basket">
-							Оформить заказ &nbsp <i class="fas fa-play"></i>
-						</a>
-					</div>
+						<div class="navbar__basket navbar-basket">
+							<a href="#" class="navbar-basket__item">
+								<img src="img/basket.png" alt="">
+							</a>
+							<div class="navbar-basket__summ">
+								Итого:<br>
+								<span class="navbar-basaket__summ-value">
+									3000<i class="fas fa-ruble-sign"></i>
+								</span>
+							</div>
+							<a href="#" class="navbar-basket__btn btn btn_basket">
+								Оформить заказ &nbsp <i class="fas fa-play"></i>
+							</a>
+						</div>
+					</nav>
 				</div>
 			</div>
 		</div>
@@ -78,7 +88,7 @@
 					</span>
 					<div class="advantage-card__overlay"></div>
 				</div>
-				<div class="advantage-card">
+				<div class="advantage-card advantage-card_active">
 					<img src="img/preview.jpg" alt="advantage" class="advantage-card__img">
 					<span class="advantage-card__title">
 						Приятный<br>запах
@@ -115,7 +125,7 @@
 						<img src="img/main-rich.png" alt="" class="feature-card__img">
 					</div>
 					<span class="feature-card__title">
-						Экономичнее сигарет
+						Экономит бюджет
 					</span>
 				</div>
 				<div class="feature-card">
@@ -123,7 +133,14 @@
 						<img src="img/main-rich.png" alt="" class="feature-card__img">
 					</div>
 					<span class="feature-card__title">
-						Экономичнее сигарет
+						Без вредных примесей
+				</div>
+				<div class="feature-card">
+					<div class="feature-card__img-wrap">
+						<img src="img/main-rich.png" alt="" class="feature-card__img">
+					</div>
+					<span class="feature-card__title">
+						Возвращает остроту вкуса
 					</span>
 				</div>
 				<div class="feature-card">
@@ -131,7 +148,7 @@
 						<img src="img/main-rich.png" alt="" class="feature-card__img">
 					</div>
 					<span class="feature-card__title">
-						Экономичнее сигарет
+						Без неприятного запаха
 					</span>
 				</div>
 				<div class="feature-card">
@@ -139,7 +156,7 @@
 						<img src="img/main-rich.png" alt="" class="feature-card__img">
 					</div>
 					<span class="feature-card__title">
-						Экономичнее сигарет
+						Улучшает состояние здоровья
 					</span>
 				</div>
 				<div class="feature-card">
@@ -147,15 +164,7 @@
 						<img src="img/main-rich.png" alt="" class="feature-card__img">
 					</div>
 					<span class="feature-card__title">
-						Экономичнее сигарет
-					</span>
-				</div>
-				<div class="feature-card">
-					<div class="feature-card__img-wrap">
-						<img src="img/main-rich.png" alt="" class="feature-card__img">
-					</div>
-					<span class="feature-card__title">
-						Экономичнее сигарет
+						Предлагает обилие вкусов
 					</span>
 				</div>				
 			</div>
@@ -229,7 +238,7 @@
 							<img src="img/rich-icon.png" alt="" class="offer-card__img">
 						</div>
 						<span class="offer-card__title">
-							Экономичнее сигарет
+							Огромный ассортимент
 						</span>
 					</div>
 					<div class="offer-card_liquids offer-card">
@@ -237,7 +246,7 @@
 							<img src="img/rich-icon.png" alt="" class="offer-card__img">
 						</div>
 						<span class="offer-card__title">
-							Экономичнее сигарет
+							На любой вкус
 						</span>
 					</div>
 					<div class="offer-card_pods offer-card">
@@ -274,7 +283,7 @@
 						<div class="offer-device-liquids">
 							<div class="offer-device__text-wrap offer-device__text-wrap_liquids">
 								<div class="offer-device__text">
-									O eiusmod tempor incididunt ut labore et  dolore magna aliqua. Ut enim ad minim ven quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+									Жидкости для электроных испарителей, состав которых прозрачен: пропиленгликоль, глицерин, пищевые ароматизаторы и никотин.
 									<div class="btn-wrap">
 										<a href="#devices" class="btn_device btn_device_liquids btn" data-target="anchor">
 											Попробовать
@@ -292,7 +301,7 @@
 							<img src="img/rich-icon.png" alt="" class="offer-card__img">
 						</div>
 						<span class="offer-card__title">
-							Экономичнее сигарет
+							Просто использовать
 						</span>
 					</div>
 					<div class="offer-card_liquids offer-card">
@@ -300,7 +309,7 @@
 							<img src="img/rich-icon.png" alt="" class="offer-card__img">
 						</div>
 						<span class="offer-card__title">
-							Экономичнее сигарет
+							Крепость для каждого
 						</span>
 					</div>
 					<div class="offer-card_pods offer-card">
@@ -445,7 +454,7 @@
 		</div>
 		<div class="devices-slider-wrap">
 			<div class="devices-slider">
-			 	<div class="devices-slider-item">
+				<div class="devices-slider-item">
 			 		<div class="devices-card">
 						<div class="devices-card__img">
 							<img src="img/slider-main.png" alt="" class="devices-card__main-img">
@@ -562,6 +571,11 @@
 			</a>
 		</div>
 	</section>
+	
+
+
+
+			 	
 	<section id="quiz" class="quiz">
 		<div class="wrapper">
 			<div class="section-title section-title_white">

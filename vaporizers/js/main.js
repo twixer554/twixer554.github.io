@@ -25,7 +25,18 @@ $(document).ready(function() {
 		centerMode: true,
 		variableWidth: true,
 	  	nextArrow: $('.devices-slider-arrow-next'), 
-	  	prevArrow: $('.devices-slider-arrow-prev')
+	  	prevArrow: $('.devices-slider-arrow-prev'),
+		responsive: [
+		{
+		  breakpoint: 480,
+		  settings: {
+		    centerMode: false,
+			variableWidth: false,
+			dots: true,
+		    slidesToShow: 1
+		  }
+		}
+		]
 	});
 	$('.comments-slider').slick({
 		dots: true,
