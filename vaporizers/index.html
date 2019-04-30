@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -106,7 +107,7 @@
 			</div>
 			<div class="btn-wrap">
 				<a href="#offer" class="btn_try btn" data-target="anchor">
-					Попробовать <i class="fas fa-long-arrow-alt-right"></i>
+					Попробовать <i class="fas fa-long-arrow-alt-right"></i>	
 				</a>
 			</div>
 		</div>
@@ -234,7 +235,7 @@
 					</h3>
 					<div class="shop__description">
 						Стильные и компактные устройства, созданые для простого, удобного и выгодного отказа от пагубной привычки.
-					<a href="#" class="shop__btn btn btn_shop">
+					<a href="#devices" class="shop__btn btn btn_shop" data-target="anchor">
 						Попробовать
 					</a>
 					</div>
@@ -246,7 +247,7 @@
 					</h3>
 					<div class="shop__description">
 						Жидкости для электроных испарителей, состав которых прозрачен: пропиленгликоль, глицерин, пищевые ароматизаторы и никотин.
-					<a href="#" class="shop__btn btn btn_shop">
+					<a href="#devices" class="shop__btn btn btn_shop" data-target="anchor">
 						Попробовать
 					</a>
 					</div>
@@ -321,7 +322,7 @@
 				</div>
 			</div>
 			<div class="btn-wrap">
-				<a href="#" class="btn_how-it-work btn">
+				<a href="#simple" class="btn_how-it-work btn" data-target="anchor">
 					Как это работает?
 				</a>
 			</div>
@@ -329,7 +330,7 @@
 		<div class="reasons">
 			<div class="wrapper">
 				<div class="reasons-wrap">
-					<div class="reason-card">
+					<div class="reason-card reason-card_1">
 						<div class="reason-card-wrap">
 							<div class="reason-card__img-wrap">
 								<img src="img/plant.png" alt="" class="reason-card__img">
@@ -338,8 +339,9 @@
 								Без кашля
 							</div>
 						</div>
+						<!-- <img src="img/plantbg.png" alt=""> -->
 					</div>
-					<div class="reason-card">
+					<div class="reason-card reason-card_2">
 						<div class="reason-card-wrap">
 							<div class="reason-card__img-wrap">
 								<img src="img/lotus.png" alt="" class="reason-card__img">
@@ -348,8 +350,9 @@
 								Без запаха
 							</div>
 						</div>
+						<!-- <img src="img/lotusbg.png" alt=""> -->
 					</div>
-					<div class="reason-card">
+					<div class="reason-card reason-card_3">
 						<div class="reason-card-wrap">
 							<div class="reason-card__img-wrap">
 								<img src="img/aqua.png" alt="" class="reason-card__img">
@@ -358,6 +361,7 @@
 								Без отдышки
 							</div>
 						</div>
+						<!-- <img src="img/aquabg.png" alt=""> -->
 					</div>
 				</div>
 			</div>
@@ -472,7 +476,7 @@
 								<div class="devices-card__price">
 									2300<i class="fas fa-ruble-sign"></i>
 								</div>
-								<a href="#" class="btn_buy btn">
+								<a href="#redirect-popup" class="btn_buy btn open-popup-link">
 									Заказать устройство
 								</a>
 							</div>
@@ -507,7 +511,7 @@
 								<div class="devices-card__price">
 									2300<i class="fas fa-ruble-sign"></i>
 								</div>
-								<a href="#" class="btn_buy btn">
+								<a href="#redirect-popup" class="btn_buy btn open-popup-link">
 									Заказать устройство
 								</a>
 							</div>
@@ -542,7 +546,7 @@
 								<div class="devices-card__price">
 									2300<i class="fas fa-ruble-sign"></i>
 								</div>
-								<a href="#" class="btn_buy btn">
+								<a href="#redirect-popup" class="btn_buy btn open-popup-link">
 									Заказать устройство
 								</a>
 							</div>
@@ -556,16 +560,11 @@
 			</div>
 		</div>
 		<div class="btn-wrap">
-			<a href="#" class="btn_more btn">
+			<a href="#redirect-popup" class="btn_more btn open-popup-link">
 				Посмотреть больше
 			</a>
 		</div>
-	</section>
-	
-
-
-
-			 	
+	</section>	
 	<section id="quiz" class="quiz">
 		<div class="wrapper">
 			<div class="section-title section-title_white">
@@ -595,10 +594,10 @@
 						<input type="radio" name="quiz-radio" id="medium" class="quiz-card__radio">
 						<label for="medium" class="quiz-card__check">Средние</label>
 					</div>
-					<div class="quiz-card__wrap">
-						<input type="radio" name="quiz-radio" checked id="dont-smoke" class="quiz-card__radio">
+					<a href="#redirect-popup" class="quiz-card__wrap open-popup-link">
+						<input type="radio" name="quiz-radio" id="dont-smoke" class="quiz-card__radio">
 						<label for="dont-smoke" class="quiz-card__check">Не курю</label>
-					</div>
+					</a>
 					<div class="quiz-card__wrap">
 						<input type="radio" name="quiz-radio"	id="hard" class="quiz-card__radio">
 						<label for="hard" class="quiz-card__check">Крепкие</label>
@@ -614,7 +613,7 @@
 			</div>
 			<div class="quiz-btns-wrap">
 				<div class="btn-wrap_quiz">
-					<a href="#" class="btn_act btn">
+					<a href="#devices" class="btn_act btn" data-target="anchor">
 						Заказать удаленно
 					</a>
 				</div>
@@ -642,7 +641,7 @@
 				 		<div class="comments-card">
 							<div class="comments-card__author">
 								<img src="img/avatar.png" alt="" class="comments-card__avatar">
-								<a href="https://vk.com/twixer554" class="comments-card__social">
+								<a href="https://vk.com/twixer554" target="blank" class="comments-card__social">
 									<i class="fab fa-vk comments-card__social-item"></i>
 								</a>
 								<div class="comments-card__title">
@@ -659,7 +658,7 @@
 				 		<div class="comments-card">
 							<div class="comments-card__author">
 								<img src="img/avatar.png" alt="" class="comments-card__avatar">
-								<a href="https://vk.com/twixer554" class="comments-card__social">
+								<a href="https://vk.com/twixer554" target="blank" class="comments-card__social">
 									<i class="fab fa-vk comments-card__social-item"></i>
 								</a>
 								<div class="comments-card__title">
@@ -676,7 +675,7 @@
 				 		<div class="comments-card">
 							<div class="comments-card__author">
 								<img src="img/avatar.png" alt="" class="comments-card__avatar">
-								<a href="https://vk.com/twixer554" class="comments-card__social">
+								<a href="https://vk.com/twixer554" target="blank" class="comments-card__social">
 									<i class="fab fa-vk comments-card__social-item"></i>
 								</a>
 								<div class="comments-card__title">
@@ -694,7 +693,7 @@
 				<button class="comments-slider-arrow-next comments-slider-arrow"><i class="fas fa-chevron-right"></i></button>
 			</div>
 			<div class="btn-wrap">
-				<a href="#offer" class="btn_try btn_try_comments btn" data-target="anchor">
+				<a href="#devices" class="btn_try btn_try_comments btn" data-target="anchor">
 					Попробовать
 				</a>
 			</div>
@@ -780,7 +779,7 @@
 				</div>
 			</div>
 			<div class="btn-wrap">
-				<a href="#offer" class="btn_try btn" data-target="anchor">
+				<a href="#devices" class="btn_try btn" data-target="anchor">
 					Попробовать
 				</a>
 			</div>
@@ -906,8 +905,25 @@
 			</div>
 		</div>
 	</footer>
+	<div class="redirect-popup mfp-hide" id="redirect-popup">
+		<div class="redirect-popup__title">
+			Другие товары
+		</div>
+		<div class="redirect-popup__description">
+			больше товаров вы можете посмотреть и заказать на сайте наших партнеров<br>Parovozvape.com
+		</div>
+		<div class="redirect-popup__wrap">
+			<img src="img/logo-redirect.png" alt="">
+			<i class="fas fa-long-arrow-alt-right redirect-popup__icon"></i>
+			<img src="img/logo-redirect-r.png" alt="">
+		</div>
+		<a href="#" class="btn btn_redirect">
+			Продолжить
+		</a>
+	</div>
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>
