@@ -7,19 +7,27 @@ $(document).ready(function() {
 			return false;
 		});
 	});
-	$( '.offer-device-pods').hover(
+	$( '.shop-wrap_device').hover(
 		function(){
-	   		$( '.offer-card_pods').fadeIn('slow');
+	   		$( '.shop-feature-wrap_device').slideToggle().css("display", "flex");
+	   		// $( '.shop-feature-wrap_device').css("display", "flex");
+	   		// $('.shop').css("margin-bottom", "0");
 	    },
 	    function(){
-	    	$( '.offer-card_pods').fadeOut('slow');
+	   		$( '.shop-feature-wrap_device').slideToggle();
+	    	// $( '.shop-feature-wrap_device').css("display", "none");
+	   		// $('.shop').css("margin-bottom", "152px");
 	});
-	$( '.offer-device-liquids').hover(
+	$( '.shop-wrap_liquids').hover(
 		function(){
-	    	$( '.offer-card_liquids').fadeIn('slow');
+	   		$( '.shop-feature-wrap_liquids').slideToggle().css("display", "flex");
+	    	// $( '.shop-feature-wrap_liquids').css("display", "flex");
+	   		// $('.shop').css("margin-bottom", "0");
 	    },
 	    function(){
-	    	$( '.offer-card_liquids').fadeOut('slow');
+	   		$( '.shop-feature-wrap_liquids').slideToggle();
+	    // 	$( '.shop-feature-wrap_liquids').css("display", "none");
+	   	// 	$('.shop').css("margin-bottom", "152px");
 	});
 	$('.devices-slider').slick({
 		slidesToShow: 1,
