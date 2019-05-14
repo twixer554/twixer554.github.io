@@ -16,7 +16,7 @@ $(document).ready(function() {
 	    function(){
 	   		// $( '.shop-feature-wrap_device').slideToggle();
 	    	$( '.shop-feature-wrap_device').css("display", "none");
-	   		$('.shop').css("margin-bottom", "150px");
+	   		$('.shop').css("margin-bottom", "135px");
 	});
 	$( '.shop-wrap_liquids').hover(
 		function(){
@@ -27,7 +27,7 @@ $(document).ready(function() {
 	    function(){
 	   		// $( '.shop-feature-wrap_liquids').slideToggle();
 	    	$( '.shop-feature-wrap_liquids').css("display", "none");
-	   		$('.shop').css("margin-bottom", "150px");
+	   		$('.shop').css("margin-bottom", "135px");
 	});
 	$('.devices-slider').slick({
 		slidesToShow: 1,
