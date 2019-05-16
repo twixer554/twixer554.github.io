@@ -16,7 +16,7 @@
 		<div class="navbar-wrap">
 			<div class="wrapper">
 				<div class="navbar">
-					<a href="#header">
+					<a href="#header" data-target="anchor">
 						<img src="img/logo.svg" alt="logo" class="navbar__logo">
 					</a>
                    <input type="checkbox" id="hmt" class="navbar__hidden">
@@ -58,7 +58,7 @@
 							</ul>
 						</div>
 						<div class="navbar__basket navbar-basket">
-							<a href="#" class="navbar-basket__item">
+							<a href="#basket-popup" class="open-popup-link navbar-basket__item">
 								<img src="img/basket.png" alt="">
 							</a>
 							<div class="navbar-basket__summ">
@@ -67,7 +67,7 @@
 									3000<i class="fas fa-ruble-sign"></i>
 								</span>
 							</div>
-							<a href="#" class="navbar-basket__btn btn btn_basket">
+							<a href="#basket-popup" id="basket-popup-link" class="open-popup-link navbar-basket__btn btn btn_basket">
 								Оформить заказ &nbsp <i class="fas fa-play"></i>
 							</a>
 						</div>
@@ -128,7 +128,7 @@
 						<img src="img/feature-1.png" alt="" class="feature-card__img">
 					</div>
 					<span class="feature-card__title">
-						Экономит бюджет
+						Экономит<br>бюджет
 					</span>
 				</div>
 				<div class="feature-card">
@@ -573,10 +573,10 @@
 		<div class="wrapper">
 			<div class="section-title section-title_white">
 				<h2 class="section-title__title">
-					Узнайте подходящую вам
+					Какую жидкость
 				</h2>
 				<div class="section-title__under-title">
-					Крепость жидкости
+					Выбрать?
 				</div>
 			</div>
 			<div class="section-description">
@@ -593,25 +593,87 @@
 				</h4>
 				<div class="quiz-card-wrap">
 					<div class="quiz-card__wrap">
-						<input type="radio" name="quiz-radio" id="light" class="quiz-card__radio">
+						<input type="radio" name="quiz-radio" id="light" class="quiz-card__radio" value="light">
 						<label for="light" class="quiz-card__check">Легкие</label>
-						<input type="radio" name="quiz-radio" id="medium" class="quiz-card__radio">
+						<input type="radio" name="quiz-radio" id="medium" class="quiz-card__radio" value="medium">
 						<label for="medium" class="quiz-card__check">Средние</label>
 					</div>
-					<a href="#redirect-popup" class="quiz-card__wrap open-popup-link">
-						<input type="radio" name="quiz-radio" id="dont-smoke" class="quiz-card__radio">
-						<label for="dont-smoke" class="quiz-card__check">Не курю</label>
-					</a>
 					<div class="quiz-card__wrap">
-						<input type="radio" name="quiz-radio"	id="hard" class="quiz-card__radio">
+						<input type="radio" name="quiz-radio" id="dont-smoke" class="quiz-card__radio" value="dont-smoke">
+						<label for="dont-smoke" class="quiz-card__check">Не курю</label>
+					</div>
+					<div class="quiz-card__wrap">
+						<input type="radio" name="quiz-radio"	id="hard" class="quiz-card__radio" value="hard">
 						<label for="hard" class="quiz-card__check">Крепкие</label>
-						<input type="radio" name="quiz-radio" id="dont-know" class="quiz-card__radio">
+						<input type="radio" name="quiz-radio" id="dont-know" class="quiz-card__radio" value="dont-know">
 						<label for="dont-know" class="quiz-card__check">Я не знаю</label>
 					</div>
 				</div>
 				<div class="btn-wrap_result">
-					<a href="#" class="btn_result btn">
+					<a  class="btn_result btn" id="btn_result">
 						Узнать результат
+					</a>
+				</div>
+				<div class="quiz__answer quiz-answer" id="quiz-dont-smoke">
+					<div class="quiz-answer__title">
+						Ваш результат:
+					</div>
+					<div class="quiz-answer__description">
+						Мы не рекомендуем вам пробовать данные устройства и жидкости к ним.
+					</div>
+					<div class="quiz-answer__mark">
+						Но вы все еше можете попробовать классический вейпинг с жидкостями без содержания никотина
+					</div>
+					<a href="#" class="btn btn_answer">
+						Попробовать
+					</a>
+				</div>
+				<div class="quiz__answer quiz-answer" id="quiz-light">
+					<div class="quiz-answer__title">
+						Ваш результат:
+					</div>
+					<div class="quiz-answer__description">
+						20мг и ниже<br><br>
+						Именно эту крепость рекоммендуется брать в вашем случае.
+					</div>
+					<a href="#" class="btn btn_answer">
+						Перейти к корзине
+					</a>
+				</div>
+				<div class="quiz__answer quiz-answer" id="quiz-medium">
+					<div class="quiz-answer__title">
+						Ваш результат:
+					</div>
+					<div class="quiz-answer__description">
+						20мг и 25мг<br><br>
+						Именно эту крепость рекоммендуется брать в вашем случае.
+					</div>
+					<a href="#" class="btn btn_answer">
+						Перейти к товару
+					</a>
+				</div>
+				<div class="quiz__answer quiz-answer" id="quiz-hard">
+					<div class="quiz-answer__title">
+						Ваш результат:
+					</div>
+					<div class="quiz-answer__description">
+						30мг и выше<br><br>
+						Именно эту крепость рекоммендуется брать в вашем случае.
+					</div>
+					<a href="#" class="btn btn_answer">
+						Перейти к товару
+					</a>
+				</div>
+				<div class="quiz__answer quiz-answer" id="quiz-dont-know">
+					<div class="quiz-answer__title">
+						Ваш результат:
+					</div>
+					<div class="quiz-answer__description">
+						20мг<br><br>
+						Именно эту крепость рекоммендуется брать в вашем случае.
+					</div>
+					<a href="#" class="btn btn_answer">
+						Перейти к товару
 					</a>
 				</div>
 			</div>
@@ -818,7 +880,7 @@
 				</div>
 			</div>
 			<div class="btn-wrap">
-				<a href="#" class="btn_spending btn">
+				<a href="#calc-popup" class="btn_spending btn open-popup-link">
 					Расчитать выгоду
 				</a>
 			</div>
@@ -885,7 +947,7 @@
 			<input class="contact-form__input" type="number" placeholder="+7 (___) ___ - __ - __" required>
 			<label for="" class="contact-form__label">Ваш E-mail</label>
 			<input class="contact-form__input" type="email" placeholder="example@email.com" required>
-			<button class="contact-form__btn btn">Отправить заявку</button>
+			<button class="contact-form__btn btn open-popup-link" href="request-popup">Отправить заявку</button>
 		</form>
 	</section>
 	<footer id="footer" class="footer">
@@ -914,7 +976,7 @@
 			Другие товары
 		</div>
 		<div class="redirect-popup__description">
-			больше товаров вы можете посмотреть и заказать на сайте наших партнеров<br>Parovozvape.com
+			Больше товаров вы можете посмотреть и заказать на сайте наших партнеров<br>Parovozvape.com
 		</div>
 		<div class="redirect-popup__wrap">
 			<img src="img/logo-redirect.png" alt="">
@@ -923,6 +985,195 @@
 		</div>
 		<a href="#" class="btn btn_redirect">
 			Продолжить
+		</a>
+	</div>
+	<div class="request-popup mfp-hide" id="request-popup">
+		<div class="request-popup__title">
+			Ваш запрос принят
+		</div>
+		<div class="request-popup__description">
+			Мы в скором времени свяжемся с вами
+		</div>
+		<a href="#" class="btn btn_redirect btn_request" id="close">
+			Продолжить
+		</a>
+	</div>
+	<div class="basket-popup mfp-hide" id="basket-popup">
+		<div class="basket-popup-wrap">
+			<div class="basket-popup__title">
+				Ваша корзина
+			</div>
+			<div class="basket-popup__content">
+				<div class="basket-popup__item">
+					<div class="basket-popup__number">
+						1.
+					</div>
+					<div class="basket-popup__img">
+						<img src="img/blue.png" alt="">
+					</div>
+					<div class="basket-popup__name">
+						Suorin Edge
+					</div>
+					<div class="basket-popup__price">
+						2300<i class="fas fa-ruble-sign"></i>
+					</div>
+				</div>
+				<div class="basket-popup__item">
+					<div class="basket-popup__number">
+						2.
+					</div>
+					<div class="basket-popup__img">
+						<img src="img/blue.png" alt="">
+					</div>
+					<div class="basket-popup__name">
+						Suorin Edge
+					</div>
+					<div class="basket-popup__price">
+						2300<i class="fas fa-ruble-sign"></i>
+					</div>
+				</div>
+				<div class="basket-popup__item">
+					<div class="basket-popup__number">
+						3.
+					</div>
+					<!-- <div class="basket-popup__img">
+						<img src="img/blue.png" alt="">
+					</div> -->
+					<div class="basket-popup__name">
+						Жидкость
+					</div>
+					<div class="basket-popup__price">
+						600<i class="fas fa-ruble-sign"></i>
+					</div>
+				</div>
+				<div class="basket-popup__item">
+					<div class="basket-popup__number">
+						3.
+					</div>
+					<!-- <div class="basket-popup__img">
+						<img src="img/blue.png" alt="">
+					</div> -->
+					<div class="basket-popup__name">
+						Жидкость
+					</div>
+					<div class="basket-popup__price">
+						600<i class="fas fa-ruble-sign"></i>
+					</div>
+				</div>
+				<div class="basket-popup__item">
+					<div class="basket-popup__number">
+						3.
+					</div>
+					<!-- <div class="basket-popup__img">
+						<img src="img/blue.png" alt="">
+					</div> -->
+					<div class="basket-popup__name">
+						Жидкость
+					</div>
+					<div class="basket-popup__price">
+						600<i class="fas fa-ruble-sign"></i>
+					</div>
+				</div>
+				<div class="basket-popup__item">
+					<div class="basket-popup__number">
+						3.
+					</div>
+					<!-- <div class="basket-popup__img">
+						<img src="img/blue.png" alt="">
+					</div> -->
+					<div class="basket-popup__name">
+						Жидкость
+					</div>
+					<div class="basket-popup__price">
+						600<i class="fas fa-ruble-sign"></i>
+					</div>
+				</div>
+			</div>
+			<div class="basket-popup__summ">
+				<div class="basket-popup__value">
+					Итого:
+				</div>
+				<div class="basket-popup__result">
+					5200<i class="fas fa-ruble-sign"></i>
+				</div>
+			</div>
+		</div>
+		<div class="basket-popup-wrap">
+			<div class="basket-popup__title">
+				Заполните форму
+			</div>
+			<form action="#" class="basket-popup__form">
+				<label for="" class="basket-popup__label" required>
+					Как вас зовут?
+				</label>
+				<input type="text" class="basket-popup__input" placeholder="Иван Петров" required>
+				<label for="" class="basket-popup__label">
+					Ваш телефон
+				</label>
+				<input type="number" class="basket-popup__input" placeholder="+7 (___) ___-__-__">
+				<label for="" class="basket-popup__label">
+					Ваш E-mail
+				</label>
+				<input type="email" class="basket-popup__input" placeholder="example@email.com">
+				<button class="basket-popup__btn btn open-popup-link">
+					Сделать заказ
+				</button>
+			</form>
+		</div>
+	</div>
+	<div class="calc-popup mfp-hide" id="calc-popup">
+		<div class="calc-popup__title">
+			Сколько стоит ваша пачка сигарет или стиков?
+		</div>
+		<div class="calc-popup-wrap">
+			<input type="radio" name="calc-popup-price" class="calc-popup__radio" id="calc-popup-value-1">
+			<label for="calc-popup-value-1" class="calc-popup__label">
+				До 100 руб.
+			</label>
+			<input type="radio" name="calc-popup-price" class="calc-popup__radio" id="calc-popup-value-2">
+			<label for="calc-popup-value-2" class="calc-popup__label">
+				100-130 руб.
+			</label>
+			<input type="radio" name="calc-popup-price" class="calc-popup__radio" id="calc-popup-value-3">
+			<label for="calc-popup-value-3" class="calc-popup__label">
+				Свыше 130 руб.
+			</label>
+		</div>
+		<a href="#next-calc" class="btn btn_next open-popup-link">
+			Продолжить
+		</a>
+	</div>
+	<div class="calc-popup mfp-hide" id="next-calc">
+		<div class="calc-popup__title">
+			Сколько пачек в неделю вы покупаете?
+		</div>
+		<div class="calc-popup-wrap">
+			<input type="radio" name="calc-popup-pack" class="calc-popup__radio" id="calc-popup-value-1">
+			<label for="calc-popup-value-1" class="calc-popup__label">
+				1-2 пачки
+			</label>
+			<input type="radio" name="calc-popup-pack" class="calc-popup__radio" id="calc-popup-value-2">
+			<label for="calc-popup-value-2" class="calc-popup__label">
+				3-5 пачек
+			</label>
+			<input type="radio" name="calc-popup-pack" class="calc-popup__radio" id="calc-popup-value-3">
+			<label for="calc-popup-value-3" class="calc-popup__label">
+				Свыше 5 пачек
+			</label>
+		</div>
+		<a href="#result-calc" class="btn btn_next open-popup-link">
+			Продолжить
+		</a>
+	</div>
+	<div class="calc-popup mfp-hide" id="result-calc">
+		<div class="calc-popup__title">
+			Ваша выгода в год составит
+		</div>
+		<div class="calc-popup-wrap calc-popup__res">
+			До <span class="calc-popup__result" id="value-calc">40375</span> рублей
+		</div>
+		<a href="#" class="btn btn_sale">
+			Начать экономию
 		</a>
 	</div>
 	<script src="js/jquery-3.3.1.min.js"></script>
